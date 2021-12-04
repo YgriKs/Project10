@@ -1,0 +1,18 @@
+using System;
+class HelloWorld {
+  static void Main() {
+      Console.Write("Введите длину первой стороны: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Введите длину второй стороны: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("Введите длину третей стороны: ");
+        int c = int.Parse(Console.ReadLine());
+        int per = perimetr(a, b, c);
+        Console.Write(per);
+  }
+  
+  static int perimetr(int a, int b, int c)
+  {
+      return (a + b + c);
+  }
+}
